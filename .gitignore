@@ -7,6 +7,5 @@ github-deploy-key.pub
 package-lock.json
 *.log
 node_modules/
-public/
 .deploy*/
 .MWEBMetaData/
