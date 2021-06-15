@@ -2,6 +2,8 @@
 Thumbs.db
 .idea/
 db.json
+github-deploy-key
+github-deploy-key.pub
 package-lock.json
 *.log
 node_modules/
