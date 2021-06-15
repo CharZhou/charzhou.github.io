@@ -15,12 +15,19 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: source
-          submodules: recursive
+          submodules: "true"
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14'
+
+      - name: Cache Node Dependencies
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{runner.OS}}-npm-caches-${{ hashFiles('package-lock.json') }}
 
       - name: Setup Hexo
         env:
