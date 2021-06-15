@@ -3,6 +3,7 @@ Thumbs.db
 .idea/
 db.json
 github-deploy-key
+public/
 github-deploy-key.pub
 package-lock.json
 *.log
